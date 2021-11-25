@@ -1,0 +1,33 @@
+name: test-description-markdown
+base: core20
+version: '1.0'
+summary: Test snap that has a description with markdown
+description: |
+  This snap has a description that uses the available markdown features.
+  
+  Markdown is:
+  - Easier than markup!
+  - Still readable if unparsed.
+  - Used in lots of different systems.
+  
+  Lists items can start with:
+  * Asterisks.
+  * Dashes.
+  
+  Emphasis is available in *weak* and **strong** form.
+  
+  Underscores can also be used for _weak_ and __strong__ emphasis.
+  
+  Indented code:
+      10 PRINT "Hello World!"
+      20 GOTO 10
+  
+  If you run `snap list` you will see the snaps you have installed.
+  
+  Markdown is taken from the https://spec.commonmark.org/ specification.
+grade: stable
+confinement: strict
+
+parts:
+  my-part:
+    plugin: nil
